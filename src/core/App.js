@@ -24,7 +24,7 @@ function App() {
   };
 
   const handleClickLinkedin = () => {
-    window.location.href = "https://github.com/repos";
+    window.location.href = "https://www.linkedin.com/in/micha%C5%82-kowalczyk-1a72063a2/?locale=en-US";
   };
 
   const handleClickInstagram = () => {
@@ -38,7 +38,7 @@ function App() {
           header={true}
           subtitle="This is "
           title="Michał Kowalczyk"
-          content="I've discovered, that coding is not only useful, but also very exiting for me"
+          content="I've discovered, that coding is not only useful, but also very exciting for me"
         />
         <Section
           content={

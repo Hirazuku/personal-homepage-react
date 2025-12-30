@@ -33,7 +33,7 @@ const TilePortfolio = () => {
                 <TilePortfolioTitle>Kuchnia-u-Kowala</TilePortfolioTitle>
                 <TilePortfolioList>
                     <TilePortfolioListItem>
-                        Using this simple app you can make your list of products to buy without the need to search for what products you need for those meals
+                        I made this app myself, changing a little todo-list-react. Using this simple app you can make your list of products to buy without the need to search for what products you need for those meals
                     </TilePortfolioListItem>
                     <TilePortfolioListItem>Demo:
                         <TilePortfolioLink href="https://hirazuku.github.io/Kuchnia-u-Kowala/">
@@ -79,6 +79,42 @@ const TilePortfolio = () => {
                     <TilePortfolioListItem>Code:
                         <TilePortfolioLink href="https://github.com/mg-wiewiora/movies-browser-react">
                             https://github.com/mg-wiewiora/movies-browser-react
+                        </TilePortfolioLink>
+                    </TilePortfolioListItem>
+                </TilePortfolioList>
+            </TilePortfolioContainer>
+            <TilePortfolioContainer>
+                <TilePortfolioTitle>currency-converter</TilePortfolioTitle>
+                <TilePortfolioList>
+                    <TilePortfolioListItem>
+                        This app was built for writing down your own goals, whether they're long or short term. You can delete those, who are already done or just mark them and hide. It was built using React for more simple syntax and more user-friendly interface. You can use it freely, even for shopping list etc. Enjoy
+                    </TilePortfolioListItem>
+                    <TilePortfolioListItem>Demo:
+                        <TilePortfolioLink href="https://hirazuku.github.io/currency-converter-react-another-form/">
+                            https://hirazuku.github.io/currency-converter-react-another-form/
+                        </TilePortfolioLink>
+                    </TilePortfolioListItem>
+                    <TilePortfolioListItem>Code:
+                        <TilePortfolioLink href="https://github.com/Hirazuku/currency-converter-react-another-form">
+                            https://github.com/Hirazuku/currency-converter-react-another-form
+                        </TilePortfolioLink>
+                    </TilePortfolioListItem>
+                </TilePortfolioList>
+            </TilePortfolioContainer>
+            <TilePortfolioContainer>
+                <TilePortfolioTitle>Domki</TilePortfolioTitle>
+                <TilePortfolioList>
+                    <TilePortfolioListItem>
+                        A simple website for recreational cottages advertisement. In this project i was learning how to show something properly in grid and flex.
+                    </TilePortfolioListItem>
+                    <TilePortfolioListItem>Demo:
+                        <TilePortfolioLink href="https://hirazuku.github.io/Domki/">
+                            https://hirazuku.github.io/Domki/
+                        </TilePortfolioLink>
+                    </TilePortfolioListItem>
+                    <TilePortfolioListItem>Code:
+                        <TilePortfolioLink href="https://github.com/Hirazuku/Domki">
+                            https://github.com/Hirazuku/Domki
                         </TilePortfolioLink>
                     </TilePortfolioListItem>
                 </TilePortfolioList>
