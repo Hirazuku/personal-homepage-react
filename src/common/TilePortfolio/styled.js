@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const TilePortfolioWrapper = styled.div`
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-gap: 20px;
   font-size: 20px;
   max-width: 100%;
@@ -77,14 +77,12 @@ export const TilePortfolioContainer = styled.header`
   }
 `
 
-export const TilePortfolioName = styled.h2`
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-size: 22px;
+export const TilePortfolioLink = styled.a`
+  font-size: 18px;
   line-height: 1.3;
   font-weight: 500;
-  color: ${({ theme }) => theme.color.woodsmoke};
+  padding-left: 5px;
+  color: ${({ theme }) => theme.color.cornflowerBlue};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         font-size: 14px;
