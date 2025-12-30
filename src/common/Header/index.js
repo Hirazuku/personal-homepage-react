@@ -8,7 +8,7 @@ import {
     Button
 } from "./styled";
 
-const Header = ({ title, subtitle, content }) => {
+const Header = ({ title, subtitle, content, header }) => {
 
   const handleClick = () => {
    window.location.href = "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqWhHLxSzDCngBPrvnBMwhVxTPPZBxHhgkvNjDwgrTKzjpWbcQvpbrVXmRKNwXFznBmKsB";
@@ -16,14 +16,16 @@ const Header = ({ title, subtitle, content }) => {
 
   return (
     <HeaderWrapper>
-        <HeaderImage $posterUrl={"https://i.postimg.cc/PJ658KhS/profile-picture.jpg"} />
+        {header === true && (
+        <HeaderImage $posterUrl={"https://i.postimg.cc/PJ658KhS/profile-picture.jpg"} />)}
         <HeaderContainer>
             <Subtitle>{subtitle}</Subtitle>
             <Title>{title}</Title>
             <Content>{content}</Content>
+            {header === true && (
             <Button
                 onClick={handleClick}>
-                ✉ Hire me</Button>
+                ✉ Hire me</Button>)}
         </HeaderContainer>
     </HeaderWrapper>
 )};

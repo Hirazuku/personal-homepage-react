@@ -1,10 +1,10 @@
 import { HashRouter } from "react-router-dom";
-import ScrollToTop from "../core/ScrollToTop";
 import { Container } from "../common/Container/styled";
 import Header from "../common/Header/index";
 import Section from "../common/Section";
 import Tile from "../common/Tile/index";
 import TilePortfolio from "../common/TilePortfolio/index";
+import { IconWrapper, GithubIcon, FacebookIcon, LinkedinIcon, InstagramIcon } from "../common/Icons/styled";
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
     <HashRouter>
       <Container>
         <Header
+          header={true}
           subtitle="This is "
           title="Michał Kowalczyk"
           content="I've discovered, that coding is not only something wanted, but also very exiting for me"
@@ -26,7 +27,7 @@ function App() {
             <Tile
               firstPage={false} />}
         />
-
+        <GithubIcon />
         <Section
           title="Portfolio"
           subtitle="My recent projects"
@@ -35,7 +36,19 @@ function App() {
           </>
           }
         />
-        <ScrollToTop />
+        <Header
+          header={false}
+          subtitle="Let's talk! "
+          title="michalkowal3k@gmail.com"
+          content="I'm ready for new job opportunities as soon as possible, I'm waiting for new challenges and endless improvement, so you can contact me anytime!"
+        />
+        <Section content={
+          <IconWrapper>
+            <GithubIcon />
+            <FacebookIcon />
+            <LinkedinIcon />
+            <InstagramIcon />
+          </IconWrapper>} />
       </Container>
     </HashRouter>
   )

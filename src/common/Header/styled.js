@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.section`
 `;
 
 export const HeaderContainer = styled.div`
-  margin: auto 50px;
+  margin: auto 0px;
   max-width: 1068px;
   justify-content: center;
   text-align: left;
@@ -55,6 +55,7 @@ export const HeaderImage = styled.div`
     border-radius: 200px;
     display: flex;
     margin-top: 0;
+    margin-right: 50px;
     text-align: left;
     background-image: ${({ $posterUrl, $noPosterUrl }) =>
     `url(${$posterUrl || $noPosterUrl})`};
