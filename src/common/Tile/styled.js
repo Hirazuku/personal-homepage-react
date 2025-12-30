@@ -4,11 +4,11 @@ export const TileWrapper = styled.div`
 background-color: ${({ theme }) => theme.color.white};
   box-shadow: 0px 4px 12px ${({ theme }) => theme.color.shadow};
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
-  grid-gap: 40px;
-  padding: 40px;
-  margin: 40px 0;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 20px 0;
   font-size: 20px;
   max-width: 100%;
 
@@ -20,9 +20,11 @@ background-color: ${({ theme }) => theme.color.white};
     }
 `;
 
-export const TileTitle = styled.h2`
+export const TileTitle = styled.h1`
   margin: 18px 0;
-  font-size: 36px;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: start;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletLandscape}px) {
         font-size: 16px;
@@ -86,12 +88,33 @@ export const TileName = styled.h2`
         margin: 5px 0;
   }`;
 
-export const TileJob = styled.ul`
+export const TileList = styled.ul`
+li::marker {
+    color: ${({ theme }) => theme.color.blue};
+  }
   display: grid;
-  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: start;
   justify-content: center;
+  list-style: disc;
+  margin-left: 0;
+  padding-left: 20px;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.3;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: 14px;
+        margin: 5px 0;
+  }
+
+@media (max-width: 540px) {
+        font-size: 8px;
+        margin: 5px 0;
+  }`;
+
+export const TileListItem = styled.li`
+  margin-left: 0;
   line-height: 1.3;
   color: ${({ theme }) => theme.color.grey};
 
@@ -104,3 +127,9 @@ export const TileJob = styled.ul`
         font-size: 8px;
         margin: 5px 0;
   }`;
+
+export const TileBreak = styled.hr`
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #000, transparent);
+`;

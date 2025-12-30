@@ -10,8 +10,14 @@ function App() {
     <HashRouter>
       <Container>
         <Section
-          title="Portfolio"
-          content={<Tile />}
+          content={
+            <Tile
+              firstPage={true} />}
+        />
+        <Section
+          content={
+            <Tile
+              firstPage={false} />}
         />
         <Routes>
           <Route path="/" />
