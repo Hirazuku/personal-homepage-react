@@ -18,20 +18,59 @@ export const IconWrapper = styled.div`
 export const GithubIcon = styled(githubIcon)`
     width: 50px;
     height: 50px;
+    
+    &:hover {
+      fill: ${({ theme }) => theme.color.cornflowerBlue};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    height: 30px;
+  }
 `;
 
 export const FacebookIcon = styled(facebookIcon)`
     width: 60px;
     height: 60px;
+
+    &:hover {
+      fill: ${({ theme }) => theme.color.cornflowerBlue};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    height: 30px;
+  }
 `;
 
 export const LinkedinIcon = styled(linkedinIcon)`
     width: 52px;
     height: 52px;
+
+    &:hover {
+      fill: ${({ theme }) => theme.color.cornflowerBlue};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    height: 30px;
+  }
 `;
 
 export const InstagramIcon = styled(instagramIcon)`
     width: 52px;
     height: 52px;
     margin-left: 3px;
+
+    &:hover {
+      fill: ${({ theme }) => theme.color.cornflowerBlue};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    height: 30px;
+  }
+`;
+
+export const IconLink = styled.div`
+
+    &:hover {
+      cursor: pointer;
+    }
 `;

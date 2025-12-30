@@ -13,7 +13,7 @@ background-color: ${({ theme }) => theme.color.white};
   max-width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletLandscape}px) {
-        grid-template-columns: auto 1fr;
+        grid-template-columns: auto;
         grid-gap: 16px;
         margin-top: 36px;
         padding: 16px;

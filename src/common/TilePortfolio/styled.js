@@ -12,7 +12,9 @@ export const TilePortfolioWrapper = styled.div`
         grid-template-columns: auto 1fr;
         grid-gap: 16px;
         margin-top: 36px;
+        margin-left: -20px;
         padding: 16px;
+        grid-gap: 5px;
     }
 `;
 
@@ -83,6 +85,10 @@ export const TilePortfolioLink = styled.a`
   font-weight: 500;
   padding-left: 5px;
   color: ${({ theme }) => theme.color.cornflowerBlue};
+
+  &:hover {
+    color: blue;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         font-size: 14px;

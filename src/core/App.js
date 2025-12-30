@@ -4,9 +4,32 @@ import Header from "../common/Header/index";
 import Section from "../common/Section";
 import Tile from "../common/Tile/index";
 import TilePortfolio from "../common/TilePortfolio/index";
-import { IconWrapper, GithubIcon, FacebookIcon, LinkedinIcon, InstagramIcon } from "../common/Icons/styled";
+import {
+  IconWrapper,
+  GithubIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  InstagramIcon,
+  IconLink
+} from "../common/Icons/styled";
 
 function App() {
+
+  const handleClickGithub = () => {
+    window.location.href = "https://github.com/repos";
+  };
+
+  const handleClickFacebook = () => {
+    window.location.href = "https://www.facebook.com/profile.php?id=100008917428069&locale=pl_PL";
+  };
+
+  const handleClickLinkedin = () => {
+    window.location.href = "https://github.com/repos";
+  };
+
+  const handleClickInstagram = () => {
+    window.location.href = "https://www.instagram.com/wahasaku/";
+  };
 
   return (
     <HashRouter>
@@ -15,7 +38,7 @@ function App() {
           header={true}
           subtitle="This is "
           title="Michał Kowalczyk"
-          content="I've discovered, that coding is not only something wanted, but also very exiting for me"
+          content="I've discovered, that coding is not only useful, but also very exiting for me"
         />
         <Section
           content={
@@ -27,7 +50,9 @@ function App() {
             <Tile
               firstPage={false} />}
         />
-        <GithubIcon />
+        <IconLink onClick={handleClickGithub}>
+              <GithubIcon />
+            </IconLink>
         <Section
           title="Portfolio"
           subtitle="My recent projects"
@@ -44,10 +69,18 @@ function App() {
         />
         <Section content={
           <IconWrapper>
-            <GithubIcon />
-            <FacebookIcon />
-            <LinkedinIcon />
-            <InstagramIcon />
+            <IconLink onClick={handleClickGithub}>
+              <GithubIcon />
+            </IconLink>
+            <IconLink onClick={handleClickFacebook}>
+              <FacebookIcon />
+            </IconLink>
+            <IconLink onClick={handleClickLinkedin}>
+              <LinkedinIcon />
+            </IconLink>
+            <IconLink onClick={handleClickInstagram}>
+              <InstagramIcon />
+            </IconLink>
           </IconWrapper>} />
       </Container>
     </HashRouter>

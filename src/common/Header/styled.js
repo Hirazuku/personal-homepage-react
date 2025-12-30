@@ -47,6 +47,10 @@ export const Content = styled.div`
   padding: 0;
   font-size: 24px;
   color: ${({ theme }) => theme.color.grey};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: 12px;
+    }
 `;
 
 export const HeaderImage = styled.div`
@@ -63,18 +67,10 @@ export const HeaderImage = styled.div`
     justify-self: start;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.tabletLandscape}px) {
-        width: 171px;
-        height: 254px;
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
         margin-left: 0px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-        grid-row: 1;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.horizontalMobile}px) {
-        width: 114px;
-        height: 169px; 
     }
 `;
 
@@ -91,10 +87,14 @@ export const Button = styled.button`
     &:hover{
         color: ${({ theme }) => theme.color.white};
         background-color: blue;
-        height: 50px;
-        font-size: 20px;
-        border: none;
         scale: 1.1;
         transition: 0.3s;
+        cursor: pointer;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: 12px;
+        height: 30px;
+        padding: 2px;
     }
 `;
