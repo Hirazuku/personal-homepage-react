@@ -7,6 +7,7 @@ export const TilePortfolioWrapper = styled.div`
   grid-gap: 20px;
   font-size: 20px;
   max-width: 100%;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletLandscape}px) {
         grid-template-columns: auto auto;

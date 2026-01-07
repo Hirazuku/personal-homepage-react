@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TileWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
+  transition: 0.3s;
   box-shadow: 0px 4px 12px ${({ theme }) => theme.color.shadow};
   display: grid;
   grid-template-columns: auto;

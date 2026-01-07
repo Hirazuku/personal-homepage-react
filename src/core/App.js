@@ -17,6 +17,7 @@ import {
 import { ThemeProvider } from "styled-components";
 import { themeDark, themeLight } from "../core/theme";
 import { GlobalStyle } from "../core/GlobalStyle";
+import { Normalize } from "styled-normalize";
 import { selectIsDarkTheme } from '../features/themeSlice';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
+      <Normalize />
       <GlobalStyle />
       <HashRouter>
         <Container>
