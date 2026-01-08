@@ -23,6 +23,7 @@ import { themeDark, themeLight } from "../core/theme";
 import { GlobalStyle } from "../core/GlobalStyle";
 import { Normalize } from "styled-normalize";
 import { selectIsDarkTheme } from '../features/themeSlice';
+import { githubUsername } from "../features/portfolioApi";
 
 function App() {
 
@@ -50,8 +51,9 @@ function App() {
 
   const dispatch = useDispatch();
 
+
   useEffect(() => {
-      dispatch(fetchPortfolioStart());
+      dispatch(fetchPortfolioStart(githubUsername));
     }
   , [dispatch]);
 
