@@ -11,8 +11,8 @@ export const List = styled.ul`
   list-style-type: none;
   padding: 0;
 
-  @media (max-width: 540px) {
-        grid-template-columns: auto;
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontalMax}px) {
+        grid-template-columns: 1fr;
         grid-gap: 16px;
         margin-top: 36px;
         grid-gap: 5px;

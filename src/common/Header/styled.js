@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.section`
   justify-items: start;
   text-align: left;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: 540px) {
     grid-template-columns: auto;
   }
 `;
@@ -72,6 +72,12 @@ export const HeaderImage = styled.div`
     justify-self: start;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        width: 250px;
+        height: 250px;
+        margin-left: 0px;
+    }
+
+    @media (max-width: 540px) {
         width: 149px;
         height: 149px;
         margin-left: 0px;

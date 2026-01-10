@@ -5,8 +5,8 @@ export const TileWrapper = styled.div`
   transition: 0.3s;
   box-shadow: 0px 4px 12px ${({ theme }) => theme.color.shadow};
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   grid-gap: 20px;
   padding: 20px;
   margin: 20px 0;
@@ -14,7 +14,7 @@ export const TileWrapper = styled.div`
   max-width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletLandscape}px) {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         grid-gap: 16px;
         margin-top: 36px;
         padding: 16px;
