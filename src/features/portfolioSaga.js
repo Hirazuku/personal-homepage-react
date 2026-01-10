@@ -1,5 +1,4 @@
 import { call, put, takeLatest, delay } from "redux-saga/effects";
-import axios from "axios";
 import {
   fetchPortfolioStart,
   fetchPortfolioSuccess,
