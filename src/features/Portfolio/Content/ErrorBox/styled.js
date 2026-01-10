@@ -32,26 +32,23 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const Button = styled.button`
-    color: ${({ theme }) => theme.color.whisper};
-    height: 50px;
+export const ButtonLink = styled.a`
+    //color: inherit;
+    text-decoration: none;
     padding: 12px 16px;
     font-weight: 600;
     font-size: 20px;
-    margin: 20px 0;
-    border: 1px solid;
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    color: ${({ theme }) => theme.color.white};
     border-radius: 5px;
-    transition: 0.3s;
-    background-color: ${({ theme }) => theme.color.scienceBlue};
+    background: ${({ theme }) => theme.color.scienceBlue};
+    transition: box-shadow 0.3s;
 
-    &:hover {
-        cursor: pointer;
-        box-shadow: 0 0 2px 2px ${({ theme }) => theme.color.blumine};
+    &.hover {
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.color.blumine};
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-        font-size: 12px;
-        height: 30px;
-        padding: 2px;
+        font-size: 18px;
     }
 `;

@@ -1,7 +1,7 @@
-import { Button } from "./styled";
+import { ButtonLink } from "./styled";
 import { githubUsername } from "../../../portfolioApi";
 import { Header, Paragraph, Wrapper } from "./styled";
-import { ReactComponent as Error } from "../../../../assets/spinner.svg";
+import { ReactComponent as Error } from "../../../../assets/danger.svg";
 
 export const ErrorBox = () => (
   <Wrapper>
@@ -11,8 +11,8 @@ export const ErrorBox = () => (
       Sorry, failed to load GitHub&nbsp;projects.<br />
       You can check them directly&nbsp;on&nbsp;GitHub.
     </Paragraph>
-    <Button href={`https://github.com/${githubUsername}`} target="_blank">
+    <ButtonLink href={`https://github.com/${githubUsername}`} target="_blank">
       Go to GitHub
-    </Button>
+    </ButtonLink>
   </Wrapper>
 );
