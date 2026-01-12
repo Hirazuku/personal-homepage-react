@@ -21,6 +21,8 @@ export const List = styled.ul`
 `;
 
 export const Tile = styled.li`
+display: grid;
+grid-template-rows: 1fr;
     font-size: 18px;
     background-color: ${({ theme }) => theme.colors.tileBackground};
     box-shadow: 0px 4px 12px ${({ theme }) => theme.color.shadow};
@@ -103,3 +105,8 @@ export const Link = styled.a`
     border-color: unset;
   }
 `;
+
+export const Image = styled.img`
+  width: 100%;
+ 
+  `;
