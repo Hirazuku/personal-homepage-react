@@ -1,7 +1,7 @@
 import { ButtonLink } from "./styled";
-import { githubUsername } from "../../../portfolioApi";
+import { githubUsername } from "../../../../portfolioApi";
 import { Header, Paragraph, Wrapper } from "./styled";
-import { ReactComponent as Error } from "../../../../assets/danger.svg";
+import { ReactComponent as Error } from "../../../../../assets/danger.svg";
 
 export const ErrorBox = () => (
   <Wrapper>

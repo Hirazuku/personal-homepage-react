@@ -36,6 +36,12 @@ export const Tile = styled.li`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletVerticalMax}px) {
+        font-size: 16px;
+        margin: 5px 0;
+        padding: 5px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         font-size: 12px;
         margin: 5px 0;
         padding: 5px;
@@ -73,7 +79,7 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.colors.fontAnother};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-        font-size: 14px;
+        font-size: 12px;
         margin: 5px 0;
         height: auto;
   }`;

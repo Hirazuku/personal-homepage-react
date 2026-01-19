@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as githubIcon } from "../../../assets/github-icon.svg";
+import { ReactComponent as githubIcon } from "../../../../assets/github-icon.svg";
 
 export const IconWrapper = styled.li`
     display: grid;
