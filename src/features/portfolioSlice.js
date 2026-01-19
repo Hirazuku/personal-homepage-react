@@ -31,8 +31,6 @@ export const {
 } =
   portfolioSlice.actions;
 
-const selectPortfolioState = state => state.portolio;
-
 export const selectRepositories = (state) => state.portfolio?.repositories;
 export const selectRepositoriesStatus = (state) => state.portfolio?.status;
 
