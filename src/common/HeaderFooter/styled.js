@@ -115,8 +115,8 @@ export const Button = styled.a`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-        font-size: 12px;
-        height: 30px;
+        font-size: 16px;
+        height: 40px;
         padding: 2px;
     }
 `;

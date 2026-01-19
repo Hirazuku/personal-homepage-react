@@ -21,8 +21,6 @@ export const List = styled.ul`
 `;
 
 export const Tile = styled.li`
-display: grid;
-grid-template-rows: 1fr;
     font-size: 18px;
     background-color: ${({ theme }) => theme.colors.tileBackground};
     box-shadow: 0px 4px 12px ${({ theme }) => theme.color.shadow};
@@ -46,14 +44,16 @@ grid-template-rows: 1fr;
 
 export const Name = styled.h3`
   margin: 18px 0;
+  height: 50px;
   font-size: 24px;
   font-weight: 700;
   text-align: start;
   color: ${({ theme }) => theme.color.scienceBlue};
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.tabletLandscape}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletVerticalMax}px) {
         font-size: 16px;
         margin: 5px 0;
+        height: 30px;
   }
   
 @media (max-width: 540px) {
@@ -62,15 +62,20 @@ export const Name = styled.h3`
   }`;
 
 export const Description = styled.p`
+  display: flex;
+  justify-content: flex-start;
   margin-left: 0;
+  margin-bottom: 10px;
   text-align: left;
   padding: 10px 0;
   line-height: 1.3;
+  height: 200px;
   color: ${({ theme }) => theme.colors.fontAnother};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         font-size: 14px;
         margin: 5px 0;
+        height: auto;
   }`;
 
 export const Links = styled.dl`
@@ -107,7 +112,17 @@ export const Link = styled.a`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled.div`
+  background-image: ${({ $posterUrl }) =>
+  `url(${$posterUrl})`};
+  background-size: cover;
+  background-position: center;
   width: 100%;
- 
+  height: 300px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    background-size: cover;
+    width: auto;
+    height: 260px;
+  }
   `;

@@ -21,13 +21,7 @@ export const Repositories = ({ repositories }) => (
           <Name>{name}</Name>
           <Description>{description}</Description>
           <Image 
-            src={customImage} 
-            alt={name}
-            onError={(e) => {
-               if (e.target.src !== social_image_url) {
-                 e.target.src = social_image_url;
-               }
-            }}
+            $posterUrl={customImage}
           />
           <Links>
             {!!homepage && (
