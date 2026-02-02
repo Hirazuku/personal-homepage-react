@@ -12,16 +12,14 @@ import {
 
 export const Repositories = ({ repositories }) => (
   <List>
-    {repositories?.map(({ id, name, description, homepage, html_url, social_image_url, full_name }) => {
-    
-      const customImage = `https://raw.githubusercontent.com/${full_name}/main/public/share.png`;
+    {repositories?.map(({ id, name, description, homepage, html_url, custom_og_image }) => {
 
       return (
         <Tile key={id}>
           <Name>{name}</Name>
           <Description>{description}</Description>
           <Image 
-            $posterUrl={customImage}
+            $posterUrl={custom_og_image}
           />
           <Links>
             {!!homepage && (

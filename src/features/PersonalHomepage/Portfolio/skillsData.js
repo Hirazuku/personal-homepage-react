@@ -31,6 +31,7 @@ export const skills = [
   "Team Work",
   "Pull requests",
   "Review in GitHub",
+  "GitHub branches",
   "Responsiveness (media queries)",
   "Figma",
   "Trello",
@@ -38,14 +39,14 @@ export const skills = [
   "TypeScript + React",
   "TanStack Query",
   "Gemini, ChatGPT",
+  "Cursor",
+  "GitHub Copilot"
 ];
 
 export const nextSkills = [
   "AI",
-  "Github Copilot",
   "Gems",
   "LLM for VS Code",
-  "Cursor",
   "SQL",
   "Next.js",
   "More about npm",
