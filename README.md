@@ -1,6 +1,16 @@
-# Michal Kowalczyk - Personal Homepage🏠📋
+# Michal Kowalczyk - Personal Homepage 🏠📋
 
 A collection of all my projects in one place
+
+# Contents 📋
+
+* [Description](#description)
+* [Functions](#functions)
+* [Technologies](#technologies)
+* [How to use](#how-to-use)
+* [Authors](#authors)
+
+# Description (What is this app made for?) 🧐
 
 ## Demo
 
