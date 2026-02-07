@@ -22,6 +22,7 @@ This app contains all my individual projects and those I contributed to in other
 
 This application has only one page, and it's very simple and clear. Only the portfolio element changes depending on whether projects can be downloaded from the repositories. There are several links, such as Gmail links addressed directly to me and icons for my social media.
 
+<a name="technologies"></a>
 ## Technologies ⚒️
 
 - 🟨 JavaScript,
